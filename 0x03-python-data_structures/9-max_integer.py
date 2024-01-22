@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def max_integer(my_list=[]):
-    max_num = 0
+    max_num = float('-inf')
     if not my_list:
         return None
     else:
