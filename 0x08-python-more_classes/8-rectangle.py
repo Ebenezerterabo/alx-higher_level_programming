@@ -9,7 +9,7 @@ class Rectangle:
     print_symbol = "#"
 
     """Initialize instance attributes"""
-    def __init__(self, width=0, height=0, print_symbol="#"):
+    def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
