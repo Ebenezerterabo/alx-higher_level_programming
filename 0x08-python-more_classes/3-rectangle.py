@@ -23,6 +23,10 @@ class Rectangle:
     def __str__(self):
         """Generate a string representation of the rectangle"""
         pattern = ""
+
+        if self.__width and self.__height:
+            return f""
+
         for i in range(self.__height):
             row = "#" * self.__width
             pattern += row + "\n"
