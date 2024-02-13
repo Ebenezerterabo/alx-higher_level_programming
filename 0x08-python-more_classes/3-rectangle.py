@@ -24,8 +24,8 @@ class Rectangle:
         """Generate a string representation of the rectangle"""
         pattern = ""
 
-        if self.__width and self.__height:
-            return f""
+        if self.__width == 0 or self.__height == 0:
+            return pattern
 
         for i in range(self.__height):
             row = "#" * self.__width
