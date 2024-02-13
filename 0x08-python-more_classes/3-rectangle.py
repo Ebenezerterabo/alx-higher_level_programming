@@ -30,6 +30,7 @@ class Rectangle:
         for i in range(self.__height):
             row = "#" * self.__width
             pattern += row + "\n"
+        pattern = pattern[:-1]
         return pattern
 
     @property
