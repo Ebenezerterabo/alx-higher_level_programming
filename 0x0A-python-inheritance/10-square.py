@@ -5,6 +5,7 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
+    """ Initialize method """
     def __init__(self, size):
         """
         Initializes an instance of a square
@@ -21,4 +22,5 @@ class Square(Rectangle):
         return self.__size * self.__size
 
     def __str__(self):
+        """ Return a readable string """
         return f"[Rectangle] {self.__size}/{self.__size}"
