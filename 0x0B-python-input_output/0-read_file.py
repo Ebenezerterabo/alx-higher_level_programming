@@ -2,6 +2,7 @@
 
 """This module reads and display the content of a file"""
 
+
 def read_file(filename=""):
     """
     Read a text file and prints it content.
