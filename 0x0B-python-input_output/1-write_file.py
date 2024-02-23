@@ -18,10 +18,6 @@ def write_file(filename="", text=""):
         int: The number of character
     """
     with open(filename, "w", encoding="utf-8") as file:
-        count = 0
+        file.write(text)
 
-        for i in range(len(text)):
-            if text[i] != '':
-                count += 1
-
-        return count
+    return len(text)
