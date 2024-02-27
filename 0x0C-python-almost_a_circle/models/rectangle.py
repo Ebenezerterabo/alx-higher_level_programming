@@ -8,6 +8,14 @@ class Rectangle(Base):
     """Rectangle class"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Initialize a new Rectangle
+
+        Args:
+           width (int): The width of the rectangle
+           height (int): The height of the rectangle
+           x (int) : The x cordinate of the rectangle
+           y (int) : The y cordiante of the rectangle
+        """
         super().__init__(id)
         self.width = width
         self.height = height
