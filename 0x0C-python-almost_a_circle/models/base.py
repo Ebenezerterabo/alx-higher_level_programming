@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 
+"""The base module which contains a class"""
+
+
 class Base:
+    """Base class"""
 
     __nb_objects = 0
 
