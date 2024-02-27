@@ -9,39 +9,47 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
-        pass
+        """Gets the width of the Rectangle"""
+        return self.__width
 
     @width.setter
     def width(self, width):
-        pass
+        """Sets the width of the Rectangle"""
+        self.__width = width
 
     @property
     def height(self):
-        pass
+        """Gets the height of the Rectangle"""
+        return self.__height
 
     @height.setter
     def height(self, height):
-        pass
+        """Sets the height of the Rectangle"""
+        self.__height = height
 
     @property
     def check_x(self):
-        pass
+        """Gets the x value"""
+        return self.__x
 
     @check_x.setter
     def check_x(self, x):
-        pass
+        """Sets the x value"""
+        self.__x = x
 
     @property
     def check_y(self):
-        pass
+        """Gets the y value"""
+        return self.__y
 
     @check_y.setter
     def check_y(self, y):
-        pass
+        """Sets the y value"""
+        self.__y = y
