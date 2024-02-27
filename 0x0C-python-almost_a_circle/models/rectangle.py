@@ -35,21 +35,21 @@ class Rectangle(Base):
         self.__height = height
 
     @property
-    def check_x(self):
+    def x(self):
         """Gets the x value"""
         return self.__x
 
-    @check_x.setter
-    def check_x(self, x):
+    @x.setter
+    def x(self, x):
         """Sets the x value"""
         self.__x = x
 
     @property
-    def check_y(self):
+    def y(self):
         """Gets the y value"""
         return self.__y
 
-    @check_y.setter
-    def check_y(self, y):
+    @y.setter
+    def y(self, y):
         """Sets the y value"""
         self.__y = y
