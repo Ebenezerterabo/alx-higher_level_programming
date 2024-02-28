@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""
+The module that contains a Rectangle class
+"""
 
-"""The module that contains a Rectangle class"""
+
 from models.base import Base
 
 
@@ -27,13 +30,13 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def width(self, value):
+    def width(self, width_value):
         """Sets the width of the Rectangle"""
-        if type(value) != int:
+        if type(width_value) != int:
             raise TypeError("width must be an integer")
-        elif value <= 0:
+        elif width_value <= 0:
             raise ValueError("width must be > 0")
-        self.__width = value
+        self.__width = width_value
 
     @property
     def height(self):
@@ -41,13 +44,13 @@ class Rectangle(Base):
         return self.__height
 
     @height.setter
-    def height(self, value):
+    def height(self, height_value):
         """Sets the height of the Rectangle"""
-        if type(value) != int:
+        if type(height_value) != int:
             raise TypeError("height must be an integer")
-        elif value <= 0:
+        elif height_value <= 0:
             raise ValueError("height must be > 0")
-        self.__height = value
+        self.__height = height_value
 
     @property
     def x(self):
@@ -55,13 +58,13 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def x(self, value):
+    def x(self, x_value):
         """Sets the x value"""
-        if type(value) != int:
+        if type(x_value) != int:
             raise TypeError("x must be an integer")
-        elif value < 0:
+        elif x_value < 0:
             raise ValueError("x must be >= 0")
-        self.__x = value
+        self.__x = x_value
 
     @property
     def y(self):
@@ -69,13 +72,13 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self, value):
+    def y(self, y_value):
         """Sets the y value"""
-        if type(value) != int:
+        if type(y_value) != int:
             raise TypeError("y must be an integer")
-        elif value < 0:
+        elif y_value < 0:
             raise ValueError("y must be >= 0")
-        self.__y = value
+        self.__y = y_value
 
     def area(self):
         """Area of a Rectangle"""
