@@ -27,8 +27,8 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """convert Json string to list"""
-        if json_string is None:
-            return "[]"
+        if json_string is None or json_string == "":
+            return []
         json_obj = json.loads(json_string)
         return json_obj
 
