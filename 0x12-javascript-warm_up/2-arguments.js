@@ -4,6 +4,8 @@ const numArgs = args.length;
 
 if (numArgs === 0) {
   console.log('No Argument');
-} else {
+} else if (numArgs === 1) {
   console.log('Argument found');
+} else {
+  console.log('Arguments found');
 }
