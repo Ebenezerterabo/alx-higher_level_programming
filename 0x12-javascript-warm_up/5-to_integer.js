@@ -5,5 +5,5 @@ if (args.length === 0) {
   console.log('Not a number');
 } else {
   const numArg = parseInt(args[0], 10);
-  console.log(numArg);
+  console.log(`My number: ${numArg}`);
 }
