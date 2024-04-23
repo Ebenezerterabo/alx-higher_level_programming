@@ -7,9 +7,5 @@ if (args.length === 0 || isNaN(numConvert)) {
 }
 
 for (let i = 0; i < numConvert; i++) {
-  for (let j = 0; j < numConvert; j++) {
-    process.stdout.write('X');
-  }
-
-  console.log('\n');
+  console.log('X'.repeat(numConvert));
 }
