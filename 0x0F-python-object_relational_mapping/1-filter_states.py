@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+""" A script that lists all states with a name starting with
+ N (upper) from database """
+
 import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
+    """ Main program """
     db = MySQLdb.connect(
         user=argv[1],
         password=argv[2],
