@@ -18,7 +18,8 @@ if __name__ == "__main__":
     # Creating cursor object
     cursor = db.cursor()
     # Executing SQL query
-    cursor.execute("SELECT * FROM states WHERE name = BINARY'{}'".format(argv[4]))
+    cursor.execute("SELECT * FROM states WHERE name = BINARY'{}'"
+                   .format(argv[4]))
     # Fetch the data from the table
     results = cursor.fetchall()
 
