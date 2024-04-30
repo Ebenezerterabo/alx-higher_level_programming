@@ -25,7 +25,7 @@ if __name__ == "__main__":
     session = Session()
 
     # Construct query
-    query = session.query(State).filter(State.name.like(f'%{argv[4]}%'))
+    query = session.query(State).filter_by(name=argv[4])
 
     # Execute the query
     result = query.first()
