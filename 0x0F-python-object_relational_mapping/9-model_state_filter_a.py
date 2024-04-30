@@ -5,7 +5,6 @@ from the database
 """
 
 from sys import argv
-from sqlalchemy import func
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -27,11 +26,11 @@ if __name__ == "__main__":
 
     # Constructing the query
     query = session.query(State).order_by(State.id.asc()).\
-        filter(func.lower(State.name).like('%a%'))
+        filter(State.name.like('%a%'))
 
     # Execute the query and get result
     results = query.all()
 
     # Iterate over rows and print result
     for result in results:
-        print(f'{result.id}: ', result.name)
+        print(f'{result.id}:', result.name)
