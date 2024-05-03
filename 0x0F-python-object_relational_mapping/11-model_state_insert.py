@@ -24,9 +24,11 @@ if __name__ == "__main__":
     session = Session()
 
     # Create a new instance
-    new_name = State(name="Louisiana", id=6)
+    new_name = State(name="Louisiana")
 
     # Add and commit to database
     session.add(new_name)
     session.commit()
     print(f'{new_name.id}')
+
+    session.close()
