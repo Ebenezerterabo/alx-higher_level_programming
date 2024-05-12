@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     # Print result
     cities_name = [result[0] for result in results]
-    outputs = ', '.join(cities_name)
+outputs = ', '.join(cities_name)
     print(outputs)
 
     # Close process
