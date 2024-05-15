@@ -16,5 +16,5 @@ if __name__ == "__main__":
     # Check and Print the status code
     if error_code >= 400:
         print(f'Error code: {error_code}')
-    else:
+    elif error_code == 200:
         print("Index")
