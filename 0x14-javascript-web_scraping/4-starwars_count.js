@@ -9,7 +9,7 @@ request(url, (error, response, body) => {
   if (error) {
     console.log(error);
   } else {
-    const data = JSON.parse(body);
+    const data = JSON.parse(response.body);
     data.results.forEach((movie) => {
       movie.characters.forEach((character) => {
         if (character === 'https://swapi-api.alx-tools.com/api/people/18/') {
