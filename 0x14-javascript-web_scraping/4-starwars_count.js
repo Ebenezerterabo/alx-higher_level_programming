@@ -12,7 +12,7 @@ request(url, (error, response, body) => {
     const data = JSON.parse(response.body);
     data.results.forEach((movie) => {
       movie.characters.forEach((character) => {
-        if (character.includes('https://swapi-api.alx-tools.com/api/people/18/')) {
+        if (character.includes('18')) {
           count++;
         }
       });
