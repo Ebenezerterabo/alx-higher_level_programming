@@ -9,6 +9,7 @@ url = 'https://alx-intranet.hbtn.io/status'
 response = requests.get(url)
 # Convert response to string
 response_str = response.text
+# Print outputs
 print('Body response:')
 print(f'\t- type: {type(response_str)}')
 print(f'\t- content: {response_str}')
